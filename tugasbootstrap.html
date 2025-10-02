@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gunung Tertinggi Indonesia</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #3a3a3a;
+      scroll-behavior: smooth; /* efek scroll halus */
+    }
+    .hero {
+      text-align: center;
+      padding: 40px 40px;
+      background: linear-gradient(135deg, #ffffff, #ffffff);
+      border-radius: 10px;
+      margin: 30px auto;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      font: Arial;
+      color: #000000;
+    }
+    .hero h2 {
+      font-weight: 600;
+    }
+    .section {
+      padding: 60px 20px;
+    }
+    .card {
+      border-radius: 12px;
+      transition: transform 0.2s ease-in-out;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+    }
+    
+    footer {
+      background-color: #f1f1f1;
+      color: #555;
+      padding: 15px 0;
+      text-align: center;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#offcanvasNavbar" data-bs-offset="50" tabindex="0">
+  
+  <!-- Navbar Offcanvas (Left Side) -->
+  <nav class="navbar bg-light shadow-sm fixed-top">
+    <div class="container-fluid">
+      <button class="btn btn-outline-secondary" type="button" 
+              data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" 
+              aria-controls="offcanvasNavbar">
+        Menu
+      </button>
+      <a class="navbar-brand ms-3 fw-bold">Helpdesk</a>
+    </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Navigasi</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#tentang">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gunung">Card Section</a></li>
+        <li class="nav-item"><a class="nav-link">Lainnya</a></li>
+      </ul>
+    </div>
+  </div>
+
+    <section class="hero bg-light">
+    <h1 class="fw-bold">Hai</h1>
+    <h2>Selamat datang di <span class="text-primary">proweb</span></h2>
+    <p class="lead">Belajar Pemrograman, Website HTML, CSS, PHP dan MySQL</p>
+    <a href="#" class="btn btn-outline-primary btn-lg mt-3">Mulai Sekarang</a>
+  </section>
+  <div>
+   <div class="container my-5">
+    <div class="row justify-content-center">
+
+  
+  <!-- Card Section -->
+  <section class="section container" id="gunung">
+    <h3 class="mb-4 text-center"></h3>
+    <div class="row justify-content-center g-4">
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100 shadow-sm">
+          <img src="Background2.jpeg.jpg" class="card-img-top" alt="Puncak Jaya">
+          <div class="card-body">
+            <h5 class="card-title">Berita</h5>
+            <p class="card-text">Keamanan digital adalah sesuatu yang wajib dilakukan. Sebagai pengingat, berikut adalah sejumlah kasus cyber crime di Indonesia yang sangat merugikan.</p>
+            <a href="https://binus.ac.id/bandung/2024/08/inilah-10-kasus-cyber-crime-yang-bikin-heboh-di-indonesia/" class="btn btn-outline-primary">Lihat Detail</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100 shadow-sm">
+          <img src="Background1.jpeg.jpg" class="card-img-top" alt="Gunung Rinjani">
+          <div class="card-body">
+            <h5 class="card-title">Informasi</h5>
+            <p class="card-text">Teknologi informasi telah menjadi pendamping aktivitas sehari-hari kita. Kemajuannya yang pesat telah memberikan dampak positif bagi berbagai sektor, mulai dari bisnis hingga pendidikan.</p>
+            <a href="https://vida.id/id/blog/perkembangan-teknologi-informasi" class="btn btn-outline-primary">Lihat Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; Copyright Mar 2025</p>
+    </div>
+  </footer>
+  
+  <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
